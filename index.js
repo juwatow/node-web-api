@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/students');
+mongoose.connect('mongodb://127.0.0.1/students');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
